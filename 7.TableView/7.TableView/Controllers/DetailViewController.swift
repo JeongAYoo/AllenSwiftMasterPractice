@@ -13,7 +13,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var movieNameLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     
-    // 전 화면에서 받아올 데이터 저장
+    // 전 화면에서 Movie데이터를 전달받기 위한 변수
     var movieData: Movie?
     
     override func viewDidLoad() {

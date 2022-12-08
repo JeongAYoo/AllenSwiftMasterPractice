@@ -85,7 +85,7 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="mfT-we-gj5" id="pk4-TT-gBO"/>
-                        <segue destination="coX-IV-XZQ" kind="presentation" id="GnJ-ig-FRP"/>
+                        <segue destination="coX-IV-XZQ" kind="presentation" identifier="toDetail" id="GnJ-ig-FRP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -107,6 +107,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="240" id="jCt-22-rYG"/>
+                                            <constraint firstAttribute="width" constant="240" id="pmY-gl-nKD"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGf-pp-1ge">
