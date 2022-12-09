@@ -22,6 +22,8 @@ class ViewController: UIViewController {
         setupTableView()
         setupDatas()
         
+        title = "영화목록"
+        
         // 스토리보드가 아닌 코드로 셀을 만들면, 셀 등록 코드 필요
         //tableView.register(<#T##nib: UINib?##UINib?#>, forCellReuseIdentifier: <#T##String#>)
     }
@@ -40,7 +42,11 @@ class ViewController: UIViewController {
         // 또는 필요할때마다 getMovieData()를 사용할수도
     }
     
-
+    @IBAction func addButtonTapped(_ sender: UIBarButtonItem) {
+        movieDataManager.updateMovieData()
+        
+        tableView.reloadData()      // 테이블뷰 갱신
+    }
 }
 
 extension ViewController: UITableViewDataSource {
