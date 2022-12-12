@@ -290,6 +290,7 @@
 				DEVELOPMENT_TEAM = 7V2ZG69KPK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = 1.FirstNewApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "60초 타이머";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -322,6 +323,7 @@
 				DEVELOPMENT_TEAM = 7V2ZG69KPK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = 1.FirstNewApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "60초 타이머";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
