@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0780992D294F8B0D00518461 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0780992C294F8B0D00518461 /* LoginView.swift */; };
 		07E71C7C29451D0C00D4C56C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E71C7B29451D0C00D4C56C /* AppDelegate.swift */; };
 		07E71C7E29451D0C00D4C56C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E71C7D29451D0C00D4C56C /* SceneDelegate.swift */; };
 		07E71C8029451D0C00D4C56C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E71C7F29451D0C00D4C56C /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0780992C294F8B0D00518461 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		07E71C7829451D0C00D4C56C /* 3.LoginProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 3.LoginProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07E71C7B29451D0C00D4C56C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07E71C7D29451D0C00D4C56C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0780992A294F8AF100518461 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0780992B294F8AFF00518461 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0780992C294F8B0D00518461 /* LoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		07E71C6F29451D0C00D4C56C = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +75,8 @@
 			children = (
 				07E71C7B29451D0C00D4C56C /* AppDelegate.swift */,
 				07E71C7D29451D0C00D4C56C /* SceneDelegate.swift */,
+				0780992B294F8AFF00518461 /* Views */,
+				0780992A294F8AF100518461 /* Controllers */,
 				07E71C7F29451D0C00D4C56C /* ViewController.swift */,
 				07E71C8129451D0C00D4C56C /* Main.storyboard */,
 				07E71C8429451D0D00D4C56C /* Assets.xcassets */,
@@ -140,6 +159,7 @@
 			files = (
 				07E71C8029451D0C00D4C56C /* ViewController.swift in Sources */,
 				07E71C7C29451D0C00D4C56C /* AppDelegate.swift in Sources */,
+				0780992D294F8B0D00518461 /* LoginView.swift in Sources */,
 				07E71C7E29451D0C00D4C56C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

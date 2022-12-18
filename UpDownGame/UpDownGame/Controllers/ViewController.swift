@@ -12,20 +12,23 @@ class ViewController: UIViewController {
     @IBOutlet weak var mainLabel: UILabel!
     @IBOutlet weak var numberLabel: UILabel!
     
-    // 컴퓨터가 랜덤으로 숫자 선택 (1...10)
-    var compNumber = Int.random(in: 1...10)
-    
-    // 내가 선택한 숫자를 담는 변수
-    //var myNumber: Int = 1
+    var upDownMananger = UpDownMananger()
 
     //앱의 화면에 들어오면 가장 처음에 실행되는 함수
     override func viewDidLoad() {
         super.viewDidLoad()
+        reset()
+    }
+    
+    func reset() {
         // 1) 메인레이블에 "선택하세요"
         mainLabel.text = "선택하세요"
         
         // 2) 숫자레이블은 "" (빈 문자열)
         numberLabel.text = ""
+        
+        // 3) 컴퓨터의 랜덤숫자를 다시 선택하게
+        upDownMananger.resetNum()
     }
 
     @IBAction func buttonTapped(_ sender: UIButton) {
@@ -45,31 +48,19 @@ class ViewController: UIViewController {
         
         // 또 다른 방법 제시
         // 숫자레이블에 있는 문자열 가져오기 (옵셔널 벗기기)
-        guard let myNumString = numberLabel.text else { return }
         // 타입 변환 (문자열 ---> 정수로)
-        guard let myNumber = Int(myNumString) else { return }
-        
-        // 1) 컴퓨터의 숫자와 내가 선택한 숫자를 비교 Up / Down / Bingo (메인레이블)
-        if compNumber > myNumber {
-            mainLabel.text = "Up"
-        } else if compNumber < myNumber {
-            mainLabel.text = "Down"
-        } else {
-            mainLabel.text = "Bingo😎"
+
+        guard let myNumString = numberLabel.text,
+            let myNumber = Int(myNumString) else {
+            return
         }
+        
+        upDownMananger.setUsersNum(num: myNumber)
+        mainLabel.text = upDownMananger.getUpDownResult()
     }
     
     @IBAction func resetButtonTapped(_ sender: UIButton) {
-        // 1) 메인레이블 "선택하세요"
-        mainLabel.text = "선택하세요"
-        
-        // 2) 숫자레이블을 "" (빈 문자열)
-        numberLabel.text = ""
-        
-        // 3) 컴퓨터의 랜덤숫자를 다시 선택하게
-        compNumber = Int.random(in: 1...10)
+        reset()
     }
-    
-
 }
 

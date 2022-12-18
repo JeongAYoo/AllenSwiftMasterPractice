@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07809929294F802C00518461 /* UpDownManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07809928294F802B00518461 /* UpDownManager.swift */; };
 		07883EAD28F09B18003F67D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07883EAC28F09B18003F67D7 /* AppDelegate.swift */; };
 		07883EAF28F09B18003F67D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07883EAE28F09B18003F67D7 /* SceneDelegate.swift */; };
 		07883EB128F09B18003F67D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07883EB028F09B18003F67D7 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07809928294F802B00518461 /* UpDownManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpDownManager.swift; sourceTree = "<group>"; };
 		07883EA928F09B18003F67D7 /* UpDownGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UpDownGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07883EAC28F09B18003F67D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07883EAE28F09B18003F67D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07809925294F7FFA00518461 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				07883EB028F09B18003F67D7 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		07809926294F800000518461 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				07883EB228F09B18003F67D7 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		07809927294F800B00518461 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				07809928294F802B00518461 /* UpDownManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		07883EA028F09B18003F67D7 = {
 			isa = PBXGroup;
 			children = (
@@ -58,8 +84,9 @@
 			children = (
 				07883EAC28F09B18003F67D7 /* AppDelegate.swift */,
 				07883EAE28F09B18003F67D7 /* SceneDelegate.swift */,
-				07883EB028F09B18003F67D7 /* ViewController.swift */,
-				07883EB228F09B18003F67D7 /* Main.storyboard */,
+				07809927294F800B00518461 /* Models */,
+				07809926294F800000518461 /* Views */,
+				07809925294F7FFA00518461 /* Controllers */,
 				07883EB528F09B19003F67D7 /* Assets.xcassets */,
 				07883EB728F09B19003F67D7 /* LaunchScreen.storyboard */,
 				07883EBA28F09B19003F67D7 /* Info.plist */,
@@ -140,6 +167,7 @@
 			files = (
 				07883EB128F09B18003F67D7 /* ViewController.swift in Sources */,
 				07883EAD28F09B18003F67D7 /* AppDelegate.swift in Sources */,
+				07809929294F802C00518461 /* UpDownManager.swift in Sources */,
 				07883EAF28F09B18003F67D7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
