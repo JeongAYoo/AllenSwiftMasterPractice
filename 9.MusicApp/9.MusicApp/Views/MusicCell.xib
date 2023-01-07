@@ -16,42 +16,60 @@
                 <rect key="frame" x="0.0" y="0.0" width="392" height="116"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VPJ-hV-GJa">
-                        <rect key="frame" x="15" y="15" width="94" height="87"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VPJ-hV-GJa">
+                        <rect key="frame" x="20" y="8" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="Dy8-Wu-Cjy"/>
+                            <constraint firstAttribute="width" constant="100" id="btk-K6-lN8"/>
+                        </constraints>
                     </imageView>
-                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="arG-8y-ycd">
-                        <rect key="frame" x="140" y="15" width="41.333333333333343" height="84.333333333333329"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="arG-8y-ycd">
+                        <rect key="frame" x="140" y="10" width="232" height="96"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IMn-1k-fIa">
-                                <rect key="frame" x="0.0" y="0.0" width="41.333333333333336" height="20.333333333333332"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Song Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IMn-1k-fIa">
+                                <rect key="frame" x="0.0" y="0.0" width="232" height="19.333333333333332"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Jc-7C-yRw">
-                                <rect key="frame" x="0.0" y="21.333333333333336" width="41.333333333333336" height="20.333333333333336"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="artist name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Jc-7C-yRw">
+                                <rect key="frame" x="0.0" y="20.333333333333332" width="232" height="16.999999999999996"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="album name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIX-yH-jah">
+                                <rect key="frame" x="0.0" y="38.333333333333343" width="232" height="44.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIX-yH-jah">
-                                <rect key="frame" x="0.0" y="42.666666666666664" width="41.333333333333336" height="20.333333333333336"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9u-xZ-tct">
-                                <rect key="frame" x="0.0" y="64" width="41.333333333333336" height="20.333333333333329"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="release date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9u-xZ-tct">
+                                <rect key="frame" x="0.0" y="84" width="232" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                     </stackView>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="arG-8y-ycd" firstAttribute="leading" secondItem="VPJ-hV-GJa" secondAttribute="trailing" constant="20" id="Lz7-4G-aOS"/>
+                    <constraint firstItem="arG-8y-ycd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="TnJ-OD-LUO"/>
+                    <constraint firstAttribute="bottom" secondItem="arG-8y-ycd" secondAttribute="bottom" constant="10" id="Z36-bE-Io4"/>
+                    <constraint firstItem="VPJ-hV-GJa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="hCB-EA-keZ"/>
+                    <constraint firstItem="VPJ-hV-GJa" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="pqh-Fm-6WP"/>
+                    <constraint firstAttribute="trailing" secondItem="arG-8y-ycd" secondAttribute="trailing" constant="20" id="vrc-OF-oWM"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="albumNameLabel" destination="EIX-yH-jah" id="Y2r-WV-Dod"/>
+                <outlet property="artistNameLabel" destination="1Jc-7C-yRw" id="tDu-B7-beH"/>
+                <outlet property="mainImageView" destination="VPJ-hV-GJa" id="35q-bc-vPE"/>
+                <outlet property="releaseDateLabel" destination="E9u-xZ-tct" id="h97-Ba-PEJ"/>
+                <outlet property="songNameLabel" destination="IMn-1k-fIa" id="E4B-ms-gin"/>
+            </connections>
             <point key="canvasLocation" x="190.76923076923077" y="46.208530805687204"/>
         </tableViewCell>
     </objects>

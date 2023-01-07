@@ -39,6 +39,21 @@
             </objects>
             <point key="canvasLocation" x="1066.1538461538462" y="3.5545023696682461"/>
         </scene>
+        <!--Search Result View Controller-->
+        <scene sceneID="jY9-5g-yQp">
+            <objects>
+                <viewController id="tQh-fm-5UK" customClass="SearchResultViewController" customModule="__MusicApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jAc-ce-XYN">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="zT6-VN-f4V"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EKG-A4-ZPF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2002" y="4"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="1D0-hX-j8Q">
             <objects>
