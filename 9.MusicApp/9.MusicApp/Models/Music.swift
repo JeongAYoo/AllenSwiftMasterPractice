@@ -34,15 +34,17 @@ struct Music: Codable {
         case releaseDate
     }
     
-    // 계산 속성으로. 형식: "yyyy-MM-dd"
+    // 계산 속성. 날짜 형식 "yyyy-MM-dd"로 변환
     var releaseDateString: String? {
         // 서버에서 주는 형태 (ISO규약에 따른 문자열 형태)
+        // String => Date로 변환
         guard let isoDate = ISO8601DateFormatter().date(from: releaseDate ?? "") else {
             return ""
         }
+        
         let myFormatter = DateFormatter()
         myFormatter.dateFormat = "yyyy-MM-dd"
-        let dateString = myFormatter.string(from: isoDate)
+        let dateString = myFormatter.string(from: isoDate)  // 다시 문자열로 변환
         return dateString
     }
 }
