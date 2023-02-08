@@ -19,6 +19,7 @@
 		073A83D92968566900CE910C /* MusicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073A83D72968566900CE910C /* MusicCell.swift */; };
 		073A83DA2968566900CE910C /* MusicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 073A83D82968566900CE910C /* MusicCell.xib */; };
 		073A83DC2969786700CE910C /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073A83DB2969786700CE910C /* SearchResultViewController.swift */; };
+		073A83DE296A05ED00CE910C /* MusicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073A83DD296A05ED00CE910C /* MusicCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		073A83D72968566900CE910C /* MusicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCell.swift; sourceTree = "<group>"; };
 		073A83D82968566900CE910C /* MusicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicCell.xib; sourceTree = "<group>"; };
 		073A83DB2969786700CE910C /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
+		073A83DD296A05ED00CE910C /* MusicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				073A83BE295DB3AF00CE910C /* Main.storyboard */,
 				073A83D72968566900CE910C /* MusicCell.swift */,
 				073A83D82968566900CE910C /* MusicCell.xib */,
+				073A83DD296A05ED00CE910C /* MusicCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				073A83B9295DB3AF00CE910C /* AppDelegate.swift in Sources */,
 				073A83D92968566900CE910C /* MusicCell.swift in Sources */,
 				073A83D42960848A00CE910C /* NetworkManager.swift in Sources */,
+				073A83DE296A05ED00CE910C /* MusicCollectionViewCell.swift in Sources */,
 				073A83BB295DB3AF00CE910C /* SceneDelegate.swift in Sources */,
 				073A83D22960834700CE910C /* Constants.swift in Sources */,
 				073A83DC2969786700CE910C /* SearchResultViewController.swift in Sources */,
